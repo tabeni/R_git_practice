@@ -1,0 +1,26 @@
+
+--- Job test_file_generater.gms Start 06/29/20 12:20:09 27.1.0 r68fbe1a WEX-WEI x86 64bit/MS Windows
+--- GAMS Parameters defined
+    Input C:\prog_test\R_practice_Nishiura\prog\test_file_generater.gms
+    PageWidth 80
+    PageSize 0
+    PageContr 3
+    Action CE
+    ScrDir C:\prog_test\R_practice_Nishiura\prog\225a\
+    SysDir C:\GAMS\win64\27.1\
+    WorkDir C:\prog_test\R_practice_Nishiura\prog\
+    LogOption 3
+    DFormat 0
+    TFormat 0
+    ErrorLog 99
+    IDE 1
+GAMS 27.1.0   Copyright (C) 1987-2019 GAMS Development. All rights reserved
+Licensee: GAMS Development Corporation, USA              G871201/0000CA-ANY
+          Free Demo, +1 202-342-0180, support@gams.com, www.gams.com DC0000
+--- Starting compilation
+--- test_file_generater.gms(68) 3 Mb
+--- Starting execution: elapsed 0:00:00.003
+--- test_file_generater.gms(66) 4 Mb
+--- GDX File C:\prog_test\R_practice_Nishiura\prog\r_practice.gdx
+*** Status: Normal completion
+--- Job test_file_generater.gms Stop 06/29/20 12:20:09 elapsed 0:00:00.045

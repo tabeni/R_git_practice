@@ -1,0 +1,96 @@
+GAMS 27.1.0  r68fbe1a Released Apr 24, 2019 WEX-WEI x86 64bit/MS Windows 06/29/20 12:20:09 Page 1
+G e n e r a l   A l g e b r a i c   M o d e l i n g   S y s t e m
+C o m p i l a t i o n
+
+
+   1  *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+      *
+   2  *Title: test_file_generater.gms
+   3  *Object: make gdx file for R practice
+   4  *Programmer: Osamu NISHIURA
+   5  *Date: Jun. 29th 2020
+   6  *Last update: Jun. 29th 2020
+   7  *NOTE:This data has no mean
+   8  *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+      *
+   9   
+  10  set
+  11  Y year/
+  12  2010
+  13  2020
+  14  2030
+  15  2040
+  16  2050
+  17  /
+  18  R region/
+  19  a
+  20  b
+  21  c
+  22  /
+  23  SC scenairo/
+  24  sc1
+  25  sc2
+  26  /
+  27  ;
+  28   
+  29  parameter
+  30  GDP(Y,R,SC)                 GDP
+  31  POP(Y,R,SC)             Population
+  32  TPE(Y,R,SC)             Total primary energy use
+  33  gr(R,SC)                growth
+  34  ;
+  35   
+  36   
+  37  *data arrangement*--------------------------------------------------------
+      -----*
+  38   
+  39  GDP(Y,'a',SC)=100 ;
+  40  POP(Y,'a',SC)=90 ;
+  41  TPE(Y,'a',SC)=40 ;
+  42   
+  43  GDP(Y,'b',SC)=80 ;
+  44  POP(Y,'b',SC)=180 ;
+  45  TPE(Y,'b',SC)=90 ;
+  46   
+  47  GDP(Y,'c',SC)=50 ;
+  48  POP(Y,'c',SC)=200 ;
+  49  TPE(Y,'c',SC)=80 ;
+  50   
+  51  gr('a','sc1')=1;
+  52  gr('b','sc1')=3;
+  53  gr('c','sc1')=1;
+  54   
+  55  gr('a','sc2')=2;
+  56  gr('b','sc2')=6;
+  57  gr('c','sc2')=4;
+  58   
+  59   
+  60  GDP(Y,R,SC)=GDP(Y,R,SC)+GDP(Y,R,SC)*gr(R,SC)*log(ord(Y))*0.5;
+  61  POP(Y,R,SC)=POP(Y,R,SC)+POP(Y,R,SC)*gr(R,SC)*log(ord(Y))*0.2;
+  62  TPE(Y,R,SC)=TPE(Y,R,SC)+TPE(Y,R,SC)*gr(R,SC)*log(ord(Y))*0.6;
+  63   
+  64  *data unloading*----------------------------------------------------------
+      ---*
+  65   
+  66  execute_unload 'r_practice.gdx'
+  67  GDP,POP,TPE;
+  68   
+
+
+COMPILATION TIME     =        0.000 SECONDS      3 MB  27.1.0 r68fbe1a WEX-WEI
+GAMS 27.1.0  r68fbe1a Released Apr 24, 2019 WEX-WEI x86 64bit/MS Windows 06/29/20 12:20:09 Page 2
+G e n e r a l   A l g e b r a i c   M o d e l i n g   S y s t e m
+E x e c u t i o n
+
+
+EXECUTION TIME       =        0.000 SECONDS      4 MB  27.1.0 r68fbe1a WEX-WEI
+
+
+USER: GAMS Development Corporation, USA              G871201/0000CA-ANY
+      Free Demo, +1 202-342-0180, support@gams.com, www.gams.com DC0000
+
+
+**** FILE SUMMARY
+
+Input      C:\prog_test\R_practice_Nishiura\prog\test_file_generater.gms
+Output     C:\prog_test\R_practice_Nishiura\prog\test_file_generater.lst

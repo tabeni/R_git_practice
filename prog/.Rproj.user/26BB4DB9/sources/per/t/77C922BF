@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1592999679721.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "91122339",
+    "id" : "77C922BF",
+    "lastKnownWriteTime" : 1591154490,
+    "last_content_update" : 1591154490,
+    "path" : "C:/Users/Katsuya/Kyoto University/Kayo Ohtani - S/ProgrammingSeminar/R/200529_seminar_materials/R_practice_Nishiura/prog/dataframe_practice.R",
+    "project_path" : "dataframe_practice.R",
+    "properties" : {
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
