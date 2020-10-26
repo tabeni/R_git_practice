@@ -15,8 +15,8 @@ df <- data.frame(name=a,japanese=b,weight=c,damage=d)
 View(df)
 
 #data input--------------------------------------------------------
-df_r <- read_csv("../data/rice.csv")
-df_o <- read_csv("../data/onion.csv")
+df_r <- read_csv("data/rice.csv")
+df_o <- read_csv("data/onion.csv")
 
 #data check----------------------------------------------------------
 View(df_r)
