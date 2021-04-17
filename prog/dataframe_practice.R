@@ -104,3 +104,6 @@ df_a %>% mutate(quantity=if_else(species=='rice',weight*10,weight*20)) %>%
 
 #spread(df_a,key="year",value="weight") %>%
 #  wgdx.reshape(gdxName="../output/df_a.gdx",symName="weight",symDim=3,tName="year")
+
+
+#2021 4 17 ipad git test
